@@ -18,12 +18,8 @@ var createNewItemElement = function(a){
 	deleteButton.className = "delete";
 
 	label.innerText = a;
-
-
 	
-		// listItem.appendChild(deleteButton);
-
-	
+// if the value of the field itemInput is NOT nothing, ONLY THEN create a label, delete button and add it.
 if (itemInput.value != "") {
 	listItem.appendChild(deleteButton);
 	listItem.appendChild(label);
@@ -57,7 +53,6 @@ var bindItemEvents = function(ListItem){
 	deleteButton.addEventListener("click", deleteItem);
 
 }
-
 
 addButton.addEventListener("click", addItem);
 
