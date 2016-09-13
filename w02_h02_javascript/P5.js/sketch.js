@@ -1,31 +1,25 @@
 var yWave = 0.0;   
-var song, amplitude,bg;
+var song, amplitude, bg;
 
-function perload(){
-  song = loadSound('assets/distant.mp3');
+function preload(){
+  song = loadSound('distant.mp3');
 }
 
 function setup() {
   bg = createCanvas(600, 400);
   amplitude = new p5.Amplitude();
-  
-  bg.mouseClicked(function(){
-    if(song.isPlaying()){
-      song.stop();
-    }else{
-      song.play();
-    }
-    
-  });
+  console.log(song.isPlaying());
+  song.loop();
 
 }
 
 function draw() {
+    var volumn = map(mouseX,0,width,0,1);
+    song.amp(volumn);
   background(	23, 83, 202);
   noStroke();
   fill(68, 137, 234);
   beginShape(); 
-  
   
   var xWave = 0;       
  
