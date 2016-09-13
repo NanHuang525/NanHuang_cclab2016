@@ -14,8 +14,8 @@ function setup() {
 }
 
 function draw() {
-    var volumn = map(mouseX,0,width,0,1);
-    song.amp(volumn);
+    var volume = map(mouseX,0,width,0,1);
+    song.amp(volume);
   background(	23, 83, 202);
   noStroke();
   fill(68, 137, 234);
