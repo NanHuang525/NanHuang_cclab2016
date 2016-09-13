@@ -1,0 +1,57 @@
+
+body {
+    background: #1b2947;
+    background: -webkit-linear-gradient(#f7c7d6, #f9dee7,#fdf4f7); 
+    background: -o-linear-gradient(#f7c7d6,#f9dee7, #fdf4f7); 
+    background: -moz-linear-gradient(#f7c7d6, #f9dee7,#fdf4f7); 
+    background: linear-gradient(#f7c7d6,#f9dee7, #fdf4f7); 
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+h1{
+   position: absolute;
+   opacity: 0.3;
+   left: 70%;
+   top: 40%;
+}
+
+
+
+@-webkit-keyframes rotate {
+    0% { -webkit-transform: 
+         perspective(300px) 
+         rotateZ(30deg) 
+         rotateX(-50deg) 
+         rotateY(0deg);
+        }
+
+  100% { -webkit-transform: 
+         perspective(300px) 
+         rotateZ(20deg) 
+         rotateX(-40deg) 
+         rotateY(-300deg);
+        }
+} 
+
+.Blossomflower {
+  transform: perspective(400px);
+  transform-style: preserve-3d;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  animation-name: flying;
+  animation: rotate 70s infinite linear;
+
+}
+
+.Blossomflower1 {
+  width: 3px;
+  height: 4px;
+  background:#f28888;
+  position: absolute;
+  top: 0;
+  left:0;
+  background-image:url("../images/petal.jpg");
+
+}
