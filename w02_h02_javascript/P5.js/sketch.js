@@ -1,4 +1,4 @@
-var yWave = 0.0;   
+var yWave = 0;   
 var song, amplitude, bg;
 
 function preload(){
