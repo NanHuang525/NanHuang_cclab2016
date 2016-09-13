@@ -1,2 +1,5 @@
 # NanHuang_cclab2016
-Got inspired from Codepen.io, and the link is  http://codepen.io/franklynroth/pen/ZYeaBd 
+Week1 - Got inspired from Codepen.io, and the link is  http://codepen.io/franklynroth/pen/ZYeaBd 
+
+Week2 - Got inspired by http://pupunzi.github.io/jquery.mb.CSSAnimate/demo.html
+                        http://codepen.io/lbebber/pen/xbZKvQ
