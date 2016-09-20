@@ -43,7 +43,7 @@ input[type="text"] {
     border-radius: 6px;
 }
 
-##getRestart {
+#getRestart {
     font-family: 'Gloria Hallelujah', cursive;
     background-color: #3161a0;
     border: none;
