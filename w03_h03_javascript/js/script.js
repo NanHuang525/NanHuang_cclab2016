@@ -10,6 +10,7 @@
         queryUrl = getSearchUrl(tag); // build URL to search Giphy API
         response = httpGet(queryUrl); 
         imageUrl = response.data.image_original_url;
+        console.log(response);
 
         var marq = document.createElement("MARQUEE");
         var img = document.createElement("IMG");
