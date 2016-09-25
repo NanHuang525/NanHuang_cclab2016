@@ -16,18 +16,21 @@
         var img = document.createElement("IMG");
 
         img.src = imageUrl;
-        marq.appendChild(img)
-        document.body.appendChild(marq)
+        marq.appendChild(img);
+        document.body.appendChild(marq);
+
     }
 
     function getSearchUrl(tag) {
-    
-        var encodedTag = "&tag=" + encodeURIComponent(tag)
+         
+        var encodedTag = "&tag=" + encodeURIComponent(tag);
         //API endpoint for getting a random image from giphy
        
-        var baseUrl = "http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC"
-        var url = baseUrl + encodedTag
+        var baseUrl = "http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC";
+        var url = baseUrl + encodedTag;
+        console.log(url);
         return url;
+       
     }
 
     function httpGet(theUrl)  
@@ -36,19 +39,19 @@
         xmlHttp.open( "GET", theUrl, false ); 
         xmlHttp.send( null );  
         return JSON.parse(xmlHttp.responseText);
-        // console.log("giphyyy") ;
-
+    
     }  
     
     function clickRestart() {
         var elems = document.getElementsByTagName("marquee");
-        var list = []
+        var list = [];
         for (element in elems) {
         list.push(elems[element]);
+
   }
   
         for (item in list) {
-        document.body.removeChild(list[item])
+        document.body.removeChild(list[item]);
   }
 
 }
