@@ -11,3 +11,5 @@ Basically,what i want to do for this project is trying to get API(data) from Gip
 
 Week 4 - this project learned from "Button Examples" on Arduino Website. 
   Video about my Arduino project - https://vimeo.com/user57175098/videos 
+  Basically, When you press the button, the LED's will light conseculatively one by one with minor delays in between. Once you press button again, the LED's will go out. 
+
