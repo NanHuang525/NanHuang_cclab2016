@@ -1,3 +1,4 @@
 
 https://vimeo.com/186130640 
+
 I attemped to using Firmata library to send and receive data between the Arduino and the processing (computer). By connecting these two systems, I have able to use my laptop to control the LED on Arduino Board by moving and dragging to change the size of the shape on my screen. Basically, the LED light will go down while you scale down the size of shape. In addition, you can change a shape to different one by clicking the button on board.  
