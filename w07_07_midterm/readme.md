@@ -1,3 +1,5 @@
+https://vimeo.com/188807971
+
 Have you carried hot coffee or soup to school? How did you keep the hot liquids hot? You probably used what is called vacuum mug. When you pour hot chocolate into a ceramic mug, you can feel the heat of the hot liquid through the mug, but when you use vacuum mug you cannot feel the heat. That is reason why sometimes our mouth, tongue and throat burns occur because we underestimate the temperature of hot drinks inside of the vacuum mug and we cannot feel it from surface. Especially it seems much difficult for blind or visually impaired to use, because they cannot feel the heat and see water vapor. Therefore, I made this Hot Water Detector (H.W.D) to help blind people to drink hot stuff safely. 
 
 Easy to Use - There's no software or mobile application needed.
