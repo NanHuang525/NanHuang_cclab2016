@@ -1,0 +1,73 @@
+
+#include <DallasTemperature.h>
+#include <OneWire.h>
+
+
+//LED
+int greenLedPin = 9;
+int yellowLedPin = 10;
+int redLedPin = 11;
+
+//TEMP
+int temp_sensor = 5;
+float temperature = 1;
+int lowerLimit = 36.5;
+int higherLimit = 45;
+
+//BUZZER
+int buzzerPin = 13;
+
+OneWire oneWirePin(temp_sensor);
+DallasTemperature sensors(&oneWirePin);
+
+void setup() {
+  Serial.begin(9600);
+
+   //LED
+  pinMode(redLedPin, OUTPUT);
+  pinMode(greenLedPin, OUTPUT);
+  pinMode(yellowLedPin, OUTPUT);
+
+  //BUZZER
+  pinMode(buzzerPin, OUTPUT);   //initialize the buzzer as an output
+  
+  //TEMP
+  sensors.begin();
+}
+
+void loop() {
+  //TEMP
+  Serial.print("Requesting Temperatures from sensors: ");
+  sensors.requestTemperatures();
+  //Serial.println("DONE");
+  
+  temperature = sensors.getTempCByIndex(0);
+
+  //LED
+  digitalWrite(redLedPin, LOW);
+  digitalWrite(greenLedPin, LOW);
+  digitalWrite(yellowLedPin, LOW);
+    
+  Serial.print("Temperature is ");
+  Serial.print(temperature);
+
+    if (temperature <= lowerLimit) {
+      Serial.println(", Yellow LED is Activated");
+      digitalWrite(yellowLedPin, HIGH);
+      noTone(buzzerPin); 
+    } 
+    else if (temperature > lowerLimit && temperature < higherLimit) {
+      Serial.println(", Green LED is Activated");
+      digitalWrite(greenLedPin, HIGH);
+      tone(13, 3000, 300);
+      delay(300);
+    }
+    else if (temperature >= higherLimit) {
+      Serial.println(", Red LED is Activated");
+      digitalWrite(redLedPin, HIGH);
+      tone(13, 8000, 100);
+      delay(100);
+    }
+    delay(500);
+ 
+ }
